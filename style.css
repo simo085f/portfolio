@@ -15,6 +15,11 @@ body {
     padding: 0;
 }
 
+a:visited{
+    color: black;
+    text-decoration:none;
+}
+
 nav {
     height: 60px;
     width: 100%;
@@ -113,13 +118,14 @@ header {
     border: 2px solid black;
     margin: 4px 2px;
 
-    transition: 0.3s;
+    transition: 0.2s;
 
 }
 
 .button:hover {
-    border: 2px solid #e4d0d0;
+    border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
+    transform: scale(1.02);
 }
 
 .button p {}
@@ -159,7 +165,7 @@ header {
     height: 350px;
     border: 2px solid black;
     background-color: white;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .boks1 p {
@@ -168,10 +174,12 @@ header {
     text-decoration: underline;
 }
 
-.boks1:hover{
-    border: 2px solid #e4d0d0;
+.boks1:hover {
+    border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
+    transform: scale(1.02);
 }
+
 /*
 .container{
     position: relative;
@@ -243,7 +251,7 @@ height: 120vh;
     width: 950px;
 }
 
-#overskrift h1{
+#overskrift h1 {
     font-size: 2em;
 }
 
@@ -253,34 +261,38 @@ height: 120vh;
     height: 220px;
     text-align: center;
     margin-top: 12vw;
-     margin-right: 1vw;
+    margin-right: 1vw;
+    transition: 0.2s;
 
 
 }
 
-#link_website p{
+#link_website p {
     margin-top: 4.2vw;
     font-size: 1.3em;
 
 }
 
-#link_website:hover{
+#link_website:hover {
     width: 250px;
     height: 220px;
-    border: 2px solid #e4d0d0;
+    border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
+    transform: scale(1.02);
 }
 
-#indhold{
+#indhold {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 13vw
+    justify-content: center;
 }
 
 
 #moodboard img {
     width: 30%;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
 }
 
@@ -289,48 +301,189 @@ height: 120vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
+
     margin-bottom: 10vw;
 }
 
-#mood{
-    margin-left: 5vw;
+#mood {
+
     margin-top: 10vw;
     margin-bottom: -8vw;
     font-weight: 100;
     font-size: 1.3em;
+    text-align: center;
 }
 
-#style_indhold{
+#style_indhold {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    margin-left: 21vw;
+    justify-content: center;
     margin-bottom: 10vw;
 }
 
-#styletile{
+#styletile {
     border: 2px solid black;
     width: 150px;
     height: 50px;
     text-align: center;
     margin-top: 5.1vw;
-     margin-left: 2vw;
+    margin-left: 2vw;
+    transition: 0.2s;
 }
 
-#styletile:hover{
-    border: 2px solid #e4d0d0;
+#styletile:hover {
+    border: 2px solid #e4d0d1;
     width: 150px;
     height: 50px;
     background-color: #e4d0d0;
+    transform: scale(1.02);
 }
 
-#styletile_tekst h1{
+#styletile_tekst h1 {
     font-size: 2em;
+}
+
+/* VIDEO OPGAVE OPSÆTNING*/
+
+#cphdox {
+
+    margin-right: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+
+}
+
+
+#cph {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+
+
+}
+
+#christian {
+    width: 600px;
+
+}
+
+#christian h1{
+    font-size: 2em;
+}
+
+.opgave{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.opgave:hover{
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+
+#redesign{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+#afsnit{
+    text-align: center;
+    margin-top: 12vw;
+    font-size: 1.4em;
+}
+
+#cafe_redesign {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+
+
+}
+
+#virksomhed {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+
+}
+
+#redesign{
+    width: 500px;
+    text-align: left;
+    margin-right: 3vw;
+}
+
+#redesign h1{
+    font-size: 2em;
+}
+
+
+
+.dokumentation{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.dokumentation:hover{
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+
+#con{
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.cafe_cafe img{
+     width: 40%;
+    border: 1px solid black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+
+}
+
+.cafe img{
+    width: 40%;
+    border: 1px solid black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
 }
 /* UX OPGAVE OPSÆTNING*/
 
