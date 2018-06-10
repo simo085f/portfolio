@@ -1,0 +1,4 @@
+[0611/014720.790:ERROR:process_info.cc(359)] UncheckedAllocate
+[0611/015151.756:ERROR:process_info.cc(359)] UncheckedAllocate
+[0611/015152.081:ERROR:process_reader_win.cc(151)] SuspendThread: Adgang nægtet. (0x5)
+[0611/015152.082:ERROR:exception_snapshot_win.cc(88)] thread ID 106932 not found in process
