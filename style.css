@@ -9,15 +9,23 @@ h1 {
 
 }
 
+picture img {
+    width: 100%
+}
+
 body {
     top: 0;
     margin: 0;
     padding: 0;
 }
 
-a:visited{
+a:visited {
     color: black;
-    text-decoration:none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -38,7 +46,7 @@ nav a {
     font-family: 'Raleway',
     sans-serif;
     font-size: 1.1em;
-    line-height: 20px;
+    line-height: 5px;
     margin-right: 3vw;
 
 }
@@ -61,8 +69,8 @@ a:link {
 #logo h1 {
     font-size: 1.1em;
     font-weight: 200;
-    line-height: 28px;
     margin-left: 3vw;
+    margin-top: 1.5vw;
 
 }
 
@@ -75,28 +83,31 @@ header {
 
 }
 
-#forside img {
-    width: 100%;
-    height: 100%;
+
+
+#cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-
 #cv img {
-    margin-left: 15vw;
     margin-top: 10vw;
+
 
 }
 
 .mig {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .txt {
-    margin-left: 8vw;
-    margin-top: 10vw;
+    margin-left: 4vw;
+    margin-top: 12vw;
     text-align: center;
-    margin-right: 15vw;
+
 }
 
 .txt h1 {
@@ -109,145 +120,57 @@ header {
 }
 
 .button {
-    background-color: white;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 1em;
-    font-family: font-family: 'Lato', sans-serif;
     border: 2px solid black;
-    margin: 4px 2px;
-
+    width: 210px;
+    text-align: center;
     transition: 0.2s;
 
 }
 
+
+
 .button:hover {
+    width: 210px;
     border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
     transform: scale(1.02);
 }
 
-.button p {}
+#mig_knap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 #billeder {
-    margin-top: 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 4vw;
     margin-bottom: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
 
 }
 
 #billeder img {
-    width: 24%;
-    align-items: center;
-}
-
-
-#billeder1 {
-    margin-top: 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 10vw;
-
-}
-
-.boks1 {
     width: 350px;
     height: 350px;
-    border: 2px solid black;
-    background-color: white;
-    transition: 0.2s;
+    margin: 0.5vw;
 }
 
-.boks1 p {
-    font-size: 2.5em;
-    font-weight: 0;
-    text-decoration: underline;
-}
-
-.boks1:hover {
-    border: 2px solid #e4d0d1;
-    background-color: #e4d0d0;
-    transform: scale(1.02);
-}
-
-/*
-.container{
-    position: relative;
-    width: 50%;
-}
-
-.image{display: block;
-width: 100%;
-height: auto;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #e4d0d0;
-}
-
-.container:hover .overlay{
-    opacity: 1;
-}
-.tekst{
-    color: white;
-    position: absolute;
-}
-*/
-
-/*
-.boks3{
-    width: 500px;
-    height: 500px;;
-    border: 4px solid black;
-}
-
-.boks3 p{
-    text-decoration: underline;
-    font-size: 3em;
-    font-weight: 100;
+#portfolio {
     text-align: center;
-    margin-top: 10vw;
+    margin-top: 15vw;
+    font-size: 1.4em;
 }
-*/
 
-/*#top{
-height: 120vh;
-    width: 100%;
-    background-image: url(forside3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-}
-*/
 
 /* HTML OPGAVE OPSÆTNING*/
 
 #overskrift {
-    margin-top: 10vw;
     font-weight: 100;
-    margin-left: 3vw;
-    margin-right: 5vw;
-
+    margin-right: 2vw;
     width: 950px;
 }
 
@@ -258,24 +181,17 @@ height: 120vh;
 #link_website {
     border: 2px solid black;
     width: 250px;
-    height: 220px;
+    height: 50px;
     text-align: center;
-    margin-top: 12vw;
-    margin-right: 1vw;
     transition: 0.2s;
+    margin-top: 10.8vw;
 
-
-}
-
-#link_website p {
-    margin-top: 4.2vw;
-    font-size: 1.3em;
 
 }
 
 #link_website:hover {
     width: 250px;
-    height: 220px;
+    height: 50px;
     border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
     transform: scale(1.02);
@@ -284,8 +200,8 @@ height: 120vh;
 #indhold {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
+    margin-top: 15vw;
 }
 
 
@@ -377,18 +293,18 @@ height: 120vh;
 
 }
 
-#christian h1{
+#christian h1 {
     font-size: 2em;
 }
 
-.opgave{
+.opgave {
     border: 2px solid black;
     width: 200px;
     text-align: center;
     transition: 0.2s;
 }
 
-.opgave:hover{
+.opgave:hover {
     width: 200px;
     border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
@@ -396,21 +312,13 @@ height: 120vh;
 }
 
 
-#redesign{
+#redesign {
     display: flex;
     flex-wrap: wrap;
 
 }
 
 
-
-
-
-#afsnit{
-    text-align: center;
-    margin-top: 12vw;
-    font-size: 1.4em;
-}
 
 #cafe_redesign {
     display: flex;
@@ -418,7 +326,7 @@ height: 120vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 15vw;
 
 
 }
@@ -433,26 +341,26 @@ height: 120vh;
 
 }
 
-#redesign{
+#redesign {
     width: 500px;
     text-align: left;
     margin-right: 3vw;
 }
 
-#redesign h1{
+#redesign h1 {
     font-size: 2em;
 }
 
 
 
-.dokumentation{
+.dokumentation {
     border: 2px solid black;
     width: 200px;
     text-align: center;
     transition: 0.2s;
 }
 
-.dokumentation:hover{
+.dokumentation:hover {
     width: 200px;
     border: 2px solid #e4d0d1;
     background-color: #e4d0d0;
@@ -460,31 +368,249 @@ height: 120vh;
 }
 
 
-#con{
+#con_cafe {
     margin-top: 10vw;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: row;
+    justify-content: center;
 
 }
 
-.cafe_cafe img{
-     width: 40%;
+.cafe img {
+    width: 820px;
     border: 1px solid black;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-right: 6vw;
+}
 
+#cafe_knap {
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#cafe_knap:hover {
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#cafe_knapp {
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#cafe_knapp:hover {
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#foer h1 {
+    font-size: 2em;
+}
+
+#foer{
+    width: 500px;
+}
+
+#con_re {
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cafe_re img {
+    width: 820px;
+    border: 1px solid black;
+    margin-left: 6vw;
 
 }
 
-.cafe img{
+#efter h1 {
+    font-size: 2em;
+}
+
+#efter{
+    width: 500px;
+}
+
+
+/* ANIMATION OPGAVE OPSÆTNING */
+
+
+
+#dokument {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vw;
+}
+
+#titelbillede img {
     width: 40%;
-    border: 1px solid black;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-right: 8vw;
+    width: 600px
+}
+
+#knap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+
 
 }
+
+#knap h1 {
+    margin: 1vw;
+    font-size: 2em;
+}
+
+#karakterdesign {
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: 0.2s;
+    margin: 1vw;
+}
+
+#karakterdesign:hover {
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#figurer {
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: 0.2s;
+    margin: 1vw;
+}
+
+#figurer:hover {
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+
+}
+
+#lydsiden {
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: 0.2s;
+    margin: 1vw;
+}
+
+#lydsiden:hover {
+    width: 200px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#selveanimation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vw;
+}
+
+#spil img {
+    width: 40%;
+    margin-left: 5vw;
+    width: 600px
+}
+
+#animation {
+    border: 2px solid black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#animation:hover {
+    width: 250px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+
+}
+
+#animationoverskrift h1 {
+    font-size: 2em;
+
+}
+
+#animationoverskrift{
+    width: 600px;
+}
+
+#privatsnak_snak {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+
+
+}
+
+.snak img {
+    width: 40%;
+    margin-right: 8vw;
+    width: 600px
+}
+
+.snak {
+    width: 700px;
+
+}
+
+#privat {
+    border: 2px solid black;
+    width: 210px;
+    text-align: center;
+    transition: 0.2s;
+
+}
+
+#privat:hover {
+    width: 210px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#privattxt {
+    width: 600px;
+}
+
+#privattxt h1 {
+    font-size: 2em;
+}
+
 /* UX OPGAVE OPSÆTNING*/
 
 #keaapp {
@@ -496,11 +622,671 @@ height: 120vh;
     font-weight: 100;
 }
 
+#kea_overskrift{
+    width: 500px;
+}
 #joe {
-    margin-top: 4vw;
-    margin-left: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
 }
 
-#joe h1 {
-    font-weight: 100;
+#joe_overskrift h1 {
+    font-size: 2em;
 }
+
+#joe_overskrift{
+    width: 500px;
+}
+
+.appdesign img {
+    margin-left: 8vw;
+    width: 700px;
+}
+
+#joe_knap {
+    border: 2px solid black;
+    width: 260px;
+    text-align: center;
+    transition: 0.2s;
+    margin-bottom: 1vw;
+}
+
+#juice_knap {
+    border: 2px solid black;
+    width: 260px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#joe_knap:hover {
+    width: 260px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#juice_knap:hover {
+    width: 260px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+#keaapp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vw;
+}
+
+.kea_design img {
+    margin-right: 8vw;
+    width: 700px;
+
+}
+
+#kea_overskrift h1 {
+    font-size: 2em;
+}
+
+#kea_knap {
+    border: 2px solid black;
+    width: 210px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#kea_knap:hover {
+    width: 210px;
+    border: 2px solid #e4d0d1;
+    background-color: #e4d0d0;
+    transform: scale(1.02);
+}
+
+/*NAV*/
+
+nav p {
+    font-size: 1.1em;
+}
+
+nav ul li {
+    float: right;
+    list-style: none;
+    position: relative;
+
+
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1.1em;
+    text-decoration: none;
+
+
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 0.01px;
+    text-align: center;
+}
+
+nav ul li ul li a {
+    padding: 8px 5px;
+
+}
+
+nav ul li ul li {
+    width: 150px;
+
+
+}
+
+nav ul li ul li a:hover {
+    background-color: whitesmoke;
+
+}
+
+nav ul li:hover ul {
+    display: block;
+
+}
+
+/* SIMONE CV */
+
+#simone_cv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+#uddannelse h1 {
+    font-size: 2em;
+}
+
+#simone img {
+    width: 400px;
+    margin-right: 10vw;
+}
+
+.main {
+    margin: auto;
+    margin-top: 2vw;
+    width: 60%;
+    margin-bottom: 10vw;
+}
+
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    margin-bottom: 20px;
+
+}
+
+.title {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    font-weight: 200;
+    color: black;
+    line-height: 2.5;
+    z-index: 10000;
+
+
+}
+
+.progress_value {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    line-height: 2.5;
+    font-weight: 200;
+    color: #455a64;
+    z-index: 10000;
+
+}
+
+.progress {
+    height: 40px;
+    position: absolute;
+
+
+}
+
+.mmdColor {
+    background: pink;
+}
+
+.mmd {
+    background: #e4d0d0;
+}
+
+.main h1 {
+    font-size: 1.5em;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e4d0d0
+
+}
+
+footer p{
+    margin-top: 2vw;
+}
+
+#boks{
+    background-color: #e4d0d0;
+    width: 50%;
+    height: 1px;
+    margin: auto;
+    margin-top: 15vw
+}
+
+/* media quaries*/
+
+@media screen and (max-width: 1024px){
+   /*FORSIDE*/
+    .txt{
+        width: 600px
+    }
+
+    /*TEMA 1*/
+
+    #overskrift{
+        width: 600px
+    }
+
+    #link_website{
+        margin-top: 26.5vw;
+    }
+
+    #styletile_tekst{
+        width: 700px
+    }
+
+    #styletile{
+        margin-top: 11.5vw;
+    }
+
+    /*TEMA 2*/
+
+    #titelbillede img{
+        margin-right: 4vw;
+        width: 50vw;
+        margin-left: 5vw;
+    }
+
+    #selveanimation img{
+        width: 50vw;
+        margin-left: 2vw;
+        margin-top: 4vw;
+    }
+
+    #animationoverskrift{
+        width: 400px;
+    }
+    .snak img{
+        width: 50vw;
+        margin-top: 3vw;
+    }
+
+    .snak{
+        width: 570px;
+    }
+
+    #privattxt{
+        width: 400px;
+    }
+
+    /*TEMA 3*/
+
+    #cphdox{
+        margin: 0;
+    }
+    #christian{
+        text-align: center;
+    }
+
+    .opgave{
+        margin-left: 20vw;
+
+    }
+
+    #redesign{
+        text-align: center;
+        margin: 0;
+    }
+
+    .dokumentation{
+        margin-left: 15vw;
+        margin-bottom: 3vw;
+
+    }
+
+    .cafe img{
+        margin: 0;
+        width: 50vw;
+        margin-right: 4vw;
+
+    }
+
+    .cafe_re img{
+        margin: 0;
+        width: 50vw;
+        margin-left: 4vw;
+        margin-top: 3vw;
+    }
+
+    #foer{
+        width: 400px;
+    }
+
+    #efter{
+        width: 400px;
+    }
+    /* TEMA 4*/
+
+    .kea_design img{
+        margin: 0;
+        width: 45vw;
+        margin-right: 3vw;
+    }
+
+    .appdesign img{
+        width: 45vw;
+        margin-left: 3vw;
+        margin-top: 3.2vw;
+    }
+
+    #kea_overskrift{
+        width: 450px;
+    }
+
+    #joe_overskrift{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* FORSIDE*/
+
+
+    .mig img{
+        margin: auto;
+    }
+
+    .txt{
+        margin: auto
+    }
+
+    #billeder img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* TEMA 1*/
+
+    #link_website{
+        margin: 0;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    #overskrift{
+        text-align: center;
+        margin: 0;
+    }
+
+    #styletile{
+        margin: 0;
+        margin-top: 4vw;
+
+    }
+
+    #styletile_tekst{
+        text-align: center;
+    }
+    /*TEMA 2 */
+
+    #selveanimation{
+        margin-top: 5vw;
+    }
+    #titelbillede img{
+        margin: 0;
+        width: 70vw;
+    }
+    #knap h1{
+        text-align: center;
+    }
+
+    #karakterdesign{
+        margin-left: 13vw;
+    }
+
+    #figurer{
+        margin-left: 13vw;
+
+    }
+
+    #lydsiden{
+        margin-left: 13vw;
+    }
+
+    #selveanimation img{
+        width: 70vw;
+        margin: 0;
+        margin-top: 3vw;
+    }
+
+    #animationoverskrift h1{
+        text-align: center;
+    }
+
+    #animationoverskrift{
+        text-align: center;
+
+    }
+
+    #animation{
+        margin-left: 10vw;
+    }
+
+    #spil img{
+        width: 70vw;
+    }
+
+    .snak img{
+        margin: 0;
+        width: 70vw;
+        margin-left: 2vw;
+
+    }
+
+    #privattxt h1{
+        text-align: center;
+    }
+
+    #privattxt{
+        text-align: center;
+    }
+    #privat{
+        margin-left: 11vw;
+    }
+
+    /* Tema 3 */
+
+    .opgave{
+        margin-left: 27vw;
+    }
+
+    .dokumentation{
+        margin-left: 20vw;
+    }
+
+    #afsnit h1{
+        font-size: 1.8em;
+        margin: 3vw;
+    }
+
+    .cafe img{
+        width: 70vw;
+        margin: 0;
+    }
+
+    #foer{
+        text-align: center;
+    }
+
+    #cafe_knap{
+        margin-left: 14vw;
+    }
+
+    #efter{
+        text-align: center;
+    }
+
+    #cafe_knapp{
+        margin-left: 14vw;
+    }
+
+    .cafe_re img{
+        width: 70vw;
+        margin: 0;
+        margin-top: 3vw;
+    }
+
+    /* TEMA 4 */
+
+    .kea_design img{
+        width: 70vw;
+        margin: 0;
+    }
+
+    #kea_overskrift{
+        text-align: center;
+    }
+
+    #kea_knap{
+        margin-left: 14vw;
+    }
+    .appdesign img{
+        width: 70vw;
+        margin: 0;
+    }
+
+    #joe_overskrift{
+        text-align: center;
+    }
+    #joe_knap{
+        margin-left: 13vw;
+    }
+
+    #juice_knap{
+        margin-left: 13vw;
+        margin-bottom: 4vw;
+    }
+
+    /*cv*/
+
+    #simone img{
+        margin: auto;
+    }
+
+    #uddannelse{
+        text-align: center;
+    }
+
+    .main h1{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 627px){
+
+    .snak{
+       width: 275px;
+    }
+
+    .privattxt{
+        margin: 3vw;
+
+    }
+
+    #privat{
+        margin-left: 20vw;
+    }
+
+    #animation{
+        margin-left: 15vw;
+    }
+
+    #karakterdesign{
+        margin-left: 24vw;
+    }
+
+    #figurer{
+        margin-left: 24vw;
+    }
+
+    #lydsiden{
+        margin-left: 24vw;
+    }
+
+    #titelbillede{
+        margin-top: 5vw;
+    }
+
+    .txt{
+        width: 350px
+    }
+
+    iframe{
+        width: 350px;
+        height: 350px;
+        margin-top: 10vw;
+    }
+
+    #christian{
+        width: 350px;
+    }
+
+    .opgave{
+        margin-left: 20vw;
+    }
+
+    #redesign {
+        width: 350px
+    }
+
+    #foer{
+        width: 350px;
+    }
+
+    #efter{
+        width: 350px;
+    }
+    #redesign h1{
+        font-size: 1.8em;
+    }
+
+    #cafe_knap{
+        margin-left: 20vw;
+    }
+
+    #cafe_knapp{
+        margin-left: 20vw;
+    }
+
+    #kea_overskrift{
+        width: 350px;
+    }
+
+    #kea_knap{
+        margin-left: 20vw;
+    }
+
+    #joe_overskrift{
+        width: 350px;
+    }
+
+    #uddannelse{
+        width: 350px;
+    }
+
+    #simone img{
+        width: 300px;
+        margin-top: 7vw;
+    }
+
+    #overskrift{
+        width: 350px;
+    }
+
+    #styletile_tekst{
+        width: 350px;
+    }
+}
+
+
+
+

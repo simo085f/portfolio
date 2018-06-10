@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 </head>
 
@@ -13,33 +14,61 @@
     <header>
 
         <section id="logo">
-            <h1> Portfolio af Simone Grauer</h1>
+            <a href="index.html"><h1> Portfolio af Simone Grauer</h1></a>
         </section>
         <nav>
-            <a href="index.html#forside">Forside</a>
-            <a href="">Portfolio</a>
-            <a href="">Om mig</a>
-            <!-- <a href="">Tema 1 - Grundlæggende HTML</a>
-         <a href="">Tema 3 - Grundlæggende video</a>
-        <a href="">Tema 2 - Animation</a>
-        <a href="">Tema 4 - Grundlæggende UX</a>-->
+            <ul>
+
+                <li><a href="cv.html">Om mig</a></li>
+                <li><a href="#portfolio">Portfolio</a>
+                <ul>
+                    <li><a href="html.html">Tema 1</a></li>
+                    <li><a href="animation.html">Tema 2</a></li>
+                    <li><a href="video.html">Tema 3</a></li>
+                    <li><a href="ux.html">Tema 4</a></li>
+
+                    </ul>
+
+                </li>
+
+
+            <li><a href="index.html#forside">Forside</a></li>
+
+            </ul>
+
         </nav>
 
 
 
     </header>
-    <section id="forside">
-        <img src="forside3.jpg"></section>
+
+      <picture>
+        <source media="(min-width: 1920px)" srcset="forside3.jpg">
+
+        <source media="(min-width: 1024px)" srcset="1024.jpg">
+
+        <source media="(min-width: 768px)" srcset="768.jpg">
+
+        <source media="(min-width: 627px)" srcset="627.jpg">
+
+        <source media="(min-width: 375px)" srcset="375.jpg">
+
+        <img src="mobile_portrait.jpg" alt="375.jpg">
+
+
+    </picture>
+
 
     <section id="cv">
         <div class="mig">
 
-            <img src="mig.png">
+            <img src="mig.png" alt="mig">
             <div class="txt">
                 <h1>Hvem er jeg?</h1>
                 <p>Mit navn er Simone Grauer, jeg er 21år og kommer fra København. Jeg er en glad og udadvendt pige som</p>
                 <p>læser til multimediedesigner på KEA og går på 1 semester. Jeg brænder for design af hjemmesider som er brugervenlige. </p>
-                <button class="button">Se mit CV her</button>
+                <section id="mig_knap">
+                <div class="button"><p><a href="cv.html">Se mit CV her</a></p></div></section>
             </div>
 
         </div>
@@ -47,31 +76,33 @@
 
 
     <section id="portfolio">
+        <h1>Portfolio</h1>
 
         <section id="billeder">
-            <img src="tema_1.jpg">
-            <img src="tema2.jpg">
-            <img src="tema3.jpg">
-            <img src="tema5-jpg.jpg">
+
+            <div class="image">
+                <a href="html.html"><img src="tema_1.jpg" alt="tema1"></a></div>
+
+
+           <div class="image2">
+           <a href="animation.html"><img src="tema2.jpg" alt="tema2"></a> </div>
+
+        <div class="image3">
+
+        <a href="video.html"><img src="tema3.jpg" alt="tema3"></a> </div>
+
+
+            <div class="image4">
+          <a href="ux.html"><img src="tema5-jpg.jpg" alt="tema4"></a></div>
 
         </section>
 
     </section>
 
-    <section id="portfolio1">
 
-        <section id="billeder1">
-            <button class="boks1"><p>TEMA 1</p></button>
-            <button class="boks1"><p>TEMA 2</p></button>
-            <button class="boks1"><p>TEMA 3</p></button>
-            <button class="boks1"><p>TEMA 4</p></button>
-
-
-        </section>
-
-    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="javascript.js"></script>
 
-    <footer>Udarbejdet af Simone Grauer</footer>
+    <footer><p>Udarbejdet af Simone Grauer</p></footer>
 </body>
 </html>

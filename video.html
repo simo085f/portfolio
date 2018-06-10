@@ -4,26 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
+   <header>
+
         <section id="logo">
-            <h1> Portfolio af Simone Grauer</h1>
+            <a href="index.html"><h1> Portfolio af Simone Grauer</h1></a>
         </section>
         <nav>
-            <a href="index.html#forside">Forside</a>
-            <a href="">Portfolio</a>
-            <a href="">Om mig</a>
-            <!-- <a href="">Tema 1 - Grundlæggende HTML</a>
-         <a href="">Tema 3 - Grundlæggende video</a>
-        <a href="">Tema 2 - Animation</a>
-        <a href="">Tema 4 - Grundlæggende UX</a>-->
+            <ul>
+
+                <li><a href="cv.html">Om mig</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a>
+                <ul>
+                    <li><a href="html.html">Tema 1</a></li>
+                    <li><a href="animation.html">Tema 2</a></li>
+                    <li><a href="video.html">Tema 3</a></li>
+                    <li><a href="ux.html">Tema 4</a></li>
+
+                    </ul>
+
+                </li>
+
+
+            <li><a href="index.html#forside">Forside</a></li>
+
+            </ul>
+
         </nav>
 
-        <section id="boks"></section>
+
 
     </header>
 
@@ -36,20 +50,21 @@
             <h1>CPH:DOX</h1>
             <p>Til CPH:DOX skulle vi lave en mini dokumentar som skulle handle om demokrati eller mennesket. Min gruppe valget mennesket som tema.</p>
             <p>I dokumentaren møder vi en mand som er meget følsom, i det han ikke ser sine børn mere, efter han i en del år har kæmpet om fælles forældremyndighed.</p>
+            <p>Han er filmet i sort/hvid og er placeret så han kigger ud af framet, dette er et bevidst valg for at forstærke hans følsomme side og for at understrege at det er et rigtig hårdt emne for ham at snakke om.</p>
             <div class="opgave">
                 <p> <a href="opgave%20everydayproject%20F18.pdf">Everydayproject F18.pdf</a></p>
             </div>
         </section>
     </section>
 
-    <section id="afsnit">
-        <h1>Virksomhedspræsentation & redesgin af Café 33</h1>
-    </section>
+    <section id="boks"></section>
+
     <section id="cafe_redesign">
         <section id="redesign">
             <h1>Virksomhedspræsentation af Café 33</h1>
-            <p>I denne virksomhedspræstentation af Café 33, får man en fornemmelse af at være på et værtshus, hvor der er god stemning og højt humør.</p>
-            <p>Derudover gemmer verdens største vodkasamling sig i kælderen.</p>
+            <p>I denne virksomhedspræstentation af Café 33, får man en fornemmelse af at være på et værtshus, hvor der er god stemning og højt humør.
+            Derudover gemmer verdens største vodkasamling sig i kælderen.</p>
+            <p>Vi har arbejdet med forskellige kameravinkler, voiceover og stilbilleder.</p>
             <div class="dokumentation">
                 <p> <a href="http://www.simonegrauer.dk/kea/03-content/03-redesign/docs/">Dokumentationssite</a></p>
             </div>
@@ -59,21 +74,39 @@
     </section>
 
 
-    <section id="con">
+    <section id="con_cafe">
+
         <div class="cafe">
-            <p>Café 33</p>
-            <img src="cafe33.JPG">
+            <img src="cafe33.JPG" alt="gammel">
+        </div>
+        <section id="foer"><h1>Café 33 før redesign</h1>
+            <p>Café 33´s hjemmeside var lidt gammeldags samt formet som et klippekort, så skærmens fulde bredde blev ikke udnyttet. Derudover var hjemmesiden rimelig rodet og fik ikke et ordentlig indtryk af Café 33.</p>
+            <section id="cafe_knap">
+            <p><a href="http://cafe33.dk/">Café 33 hjemmeside</a></p>
+            </section></section>
+
+
+
+</section>
+
+    <section id="con_re">
+
+        <section id="efter"><h1>Café 33 efter redesign</h1>
+            <p>I vores redesign af Café 33´s hjemmeside fokuserede vi meget på at brugeren skulle have en god fornemmelse af Café 33. Derfor besluttede vi os for at lave en komplet ny hjemmeside. Før havde Café 33 to hjemmesider, en til værtshuset og en til vodkakollektionen. Derfor besluttede vi os for at slå dem sammen.</p>
+        <section id="cafe_knapp">
+            <p><a href="http://simonegrauer.dk/kea/03-content/03-redesign/site/">Redesgin af Café 33</a></p></section>
+
+        </section>
+
+        <div class="cafe_re">
+            <img src="nycafe33.JPG" alt="ny">
         </div>
 
-        <div class="cafe_cafe">
-            <p>Redesign af Café 33</p>
-            <img src="nycafe33.JPG">
-        </div>
     </section>
 
 
 
-    <a href="http://simonegrauer.dk/kea/03-content/03-redesign/site/">Redesgin af Café 33</a>
-    <a href="http://cafe33.dk/">Café 33 hjemmeside</a>
+
+    <footer><p>Udarbejdet af Simone Grauer</p></footer>
 </body>
 </html>
